@@ -1,0 +1,31 @@
+.add-item{
+  /* padding: 5px 35px !important; */
+  padding-top: 18px !important;
+  padding-bottom: 18px !important;
+  min-width: 170px;
+  font-size: 1.2em !important;
+  letter-spacing: 2px;
+  text-shadow:
+        2px 2px 0 #a00,
+        -2px -2px 0 #a00,
+        2px -2px 0 #a00,
+        -2px 2px 0 #a00,
+        0 2px 0 #a00,
+        2px 0 0 #a00,
+        0 -2px 0 #a00,
+        -2px 0 0 #a00,
+        2px 2px 5px #a00;
+}
+.full-width{
+  width: 100%;
+}
+
+.form-control{
+  min-width: 30vw;
+}
+
+@media screen and (max-width: 576px) {
+    .form-control{
+      width: 90vw !important;
+    }
+}
