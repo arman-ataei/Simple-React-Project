@@ -4,7 +4,8 @@ import Item from './components/Item'
 import './App.css'
 function App() {
   const [lastItem, setLastItem] = React.useState("")
-  const [itemLst, setItemLst] = React.useState(["Tomato"])
+  const [itemLst, setItemLst] = React.useState( ()=>JSON.parse(localStorage.getItem("itemLst")) || ["Tomato"])
+  React.useEffect(()=>localStorage.setItem("itemLst", JSON.stringify(itemLst)),[itemLst])
     function handleSubmit(event){
       event.preventDefault()
       // console.log(itemLst)
