@@ -43,7 +43,7 @@ function App() {
     console.log(itemLst)
     return (
    <div className='bg-warning min-vw-100 min-vh-100 d-flex flex-column align-items-center justify-content-center'>
-              <h1 className='mb-5'>Shoping List</h1>
+              <h1 className='mb-5'>Shopping List</h1>
             <div className='d-flex flex-column justify-content-center'>
               <form onSubmit={handleSubmit} className='d-flex flex-column flex-sm-row justify-content-center' action="">
                     <input onChange={updateLastItem} placeholder="Enter your Item" className='form-control my-sm-0 mx-sm-1 p-3 my-3' value={lastItem} type="text" name="Item" />
